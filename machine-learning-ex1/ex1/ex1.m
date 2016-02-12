@@ -30,10 +30,10 @@ clear ; close all; clc
 % Complete warmUpExercise.m 
 fprintf('Running warmUpExercise ... \n');
 fprintf('5x5 Identity Matrix: \n');
-warmUpExercise()
+%warmUpExercise()
 
 fprintf('Program paused. Press enter to continue.\n');
-pause;
+%pause;
 
 
 %% ======================= Part 2: Plotting =======================
@@ -44,10 +44,10 @@ m = length(y); % number of training examples
 
 % Plot Data
 % Note: You have to complete the code in plotData.m
-plotData(X, y);
+%plotData(X, y);
 
 fprintf('Program paused. Press enter to continue.\n');
-pause;
+%pause;
 
 %% =================== Part 3: Gradient descent ===================
 fprintf('Running Gradient Descent ...\n')
@@ -59,8 +59,10 @@ theta = zeros(2, 1); % initialize fitting parameters
 iterations = 1500;
 alpha = 0.01;
 
+
 % compute and display initial cost
 computeCost(X, y, theta)
+pause;
 
 % run gradient descent
 theta = gradientDescent(X, y, theta, alpha, iterations);
